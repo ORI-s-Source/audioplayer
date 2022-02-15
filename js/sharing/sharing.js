@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
         imgFrame.css({'max-width': '450px'});
 
         if (imgFrame.find('audio').length === 0) {
-            var downloadURL = $('#downloadURL').val();
+            //var downloadURL = $('#downloadURL').val();
+            var downloadURL = window.location.href.split('?')[0] + '/download';
             var audioTag = '<audio tabindex="0" controls preload="none" style="width: 100%;"> <source src="' + downloadURL + '" type="' + mimeType + '"/> </audio>';
             imgFrame.append(audioTag);
         }

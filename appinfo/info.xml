@@ -1,9 +1,12 @@
 <?xml version="1.0"?>
 <info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
 	<id>audioplayer</id>
-	<name>Audio Player</name>
+	<name>Audio Player Public Share</name>
 	<summary>play / stream / organize</summary>
-	<description><![CDATA[A music player for FLAC, MP3, MP4, AIF, AAC, streams, … with playlist support and SONOS integration.
+	<description>
+		<![CDATA[JUST FOR PUBLIC SHARE
+
+A music player for FLAC, MP3, MP4, AIF, AAC, streams, … with playlist support and SONOS integration.
 
 - Cover or List view by various categories
 - Tuned for big audio collections
@@ -37,18 +40,4 @@ See [README](https://github.com/rello/audioplayer/blob/master/README.md) file fo
 	<dependencies>
 		<nextcloud min-version="21" max-version="25"/>
 	</dependencies>
-	<settings>
-		<admin-section>OCA\audioplayer\Settings\AdminSection</admin-section>
-		<personal>OCA\audioplayer\Settings\Personal</personal>
-		<personal-section>OCA\audioplayer\Settings\PersonalSection</personal-section>
-	</settings>
-	<navigations>
-		<navigation>
-			<id>audioplayer</id>
-			<name>Audio Player</name>
-			<route>audioplayer.page.index</route>
-			<icon>app.svg</icon>
-			<order>6</order>
-		</navigation>
-	</navigations>
 </info>
